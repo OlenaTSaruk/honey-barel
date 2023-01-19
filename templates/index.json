@@ -226,6 +226,37 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "238b54b9-8648-479b-a43d-103013b4c14c": {
+      "type": "section-slider-products",
+      "blocks": {
+        "e36dcfad-4602-4482-9bf2-bd4ac89d6687": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "акацієвий-мед"
+          }
+        },
+        "fe939a62-77ab-44c6-a123-59fafec0577d": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "гречаний-мед"
+          }
+        },
+        "d272372b-cc6d-4a73-96a9-be32a4e05a95": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "мед-з-різнотравя"
+          }
+        }
+      },
+      "block_order": [
+        "e36dcfad-4602-4482-9bf2-bd4ac89d6687",
+        "fe939a62-77ab-44c6-a123-59fafec0577d",
+        "d272372b-cc6d-4a73-96a9-be32a4e05a95"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -234,6 +265,7 @@
     "collage",
     "video",
     "multicolumn",
-    "d1f8ad3b-5c42-4fcd-b6c2-caa7d60769e2"
+    "d1f8ad3b-5c42-4fcd-b6c2-caa7d60769e2",
+    "238b54b9-8648-479b-a43d-103013b4c14c"
   ]
 }
