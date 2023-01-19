@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "3c2cc0d6-84f8-44b1-8404-96f60f37e44b": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17417299001625__3c2cc0d6-84f8-44b1-8404-96f60f37e44b-167386240658093998-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "мед-сотовий"
+          }
+        },
+        "template--17417299001625__3c2cc0d6-84f8-44b1-8404-96f60f37e44b-167386240658093998-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "акція"
+          }
+        }
+      },
+      "block_order": [
+        "template--17417299001625__3c2cc0d6-84f8-44b1-8404-96f60f37e44b-167386240658093998-2",
+        "template--17417299001625__3c2cc0d6-84f8-44b1-8404-96f60f37e44b-167386240658093998-0"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3c2cc0d6-84f8-44b1-8404-96f60f37e44b"
+  ]
+}
