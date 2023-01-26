@@ -11,7 +11,8 @@
             {% if block.settings.proposal_product != blank %}
               {% assign product = block.settings.proposal_product %}
               <div class="slider-product-proposal__slider-item">
-                <img src="{{ product.featured_image | img_url: ''}}" alt="{{ product.title }}">
+                {{ product.images[0] | img_url: '400x' | img_tag: product.title, 'slider-item__picture'}}
+
                 <h4 class="slider-item__title">{{ product.title }}</h4>
               </div>
             {% endif %}
