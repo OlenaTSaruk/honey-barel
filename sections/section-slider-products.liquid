@@ -42,7 +42,11 @@
 {% comment %} Підключення і стилізація прокрутки слайдів {% endcomment %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({infinite: true, slidesToShow: {{ section.settings.slider_items }}, slidesToScroll: 1})
+    $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
+    infinite: true,
+    slidesToShow: {{ section.settings.slider_items }},
+    slidesToScroll: 1
+    })
   });
 </script>
 
@@ -59,7 +63,7 @@
         "max": 10,
         "step": 1,
         "label": "Items in a row",
-        "default": 2
+        "default": 2,
       }
     ],
     "blocks": [
