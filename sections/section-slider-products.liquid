@@ -11,9 +11,20 @@
             {% if block.settings.proposal_product != blank %}
               {% assign product = block.settings.proposal_product %}
               <div class="slider-product-proposal__slider-item">
-                {{ product.images[0] | img_url: '400x' | img_tag: product.title, 'slider-item__picture'}}
-
-                <h4 class="slider-item__title">{{ product.title }}</h4>
+                <a href="{{ product.url }}" class="slider-item__link">
+                <div class="slider-item__image">
+                    {{ product.images[0] | img_url: '400x' | img_tag: product.title, 'slider-item__picture' }}
+                  </div>
+                  <h4 class="slider-item__title">{{ product.title }}</h4>
+                  {% if product.description != blank %}
+                    <div class="slider-item__description">
+                      {{ product.description | truncate: 100 }}
+                    </div>
+                  {% endif %}
+                  <div class="slider-item__price">
+                    {{ product.price | money }}
+                  </div>
+                  </a>
               </div>
             {% endif %}
           {% endfor %}
@@ -31,11 +42,7 @@
 {% comment %} Підключення і стилізація прокрутки слайдів {% endcomment %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
-      infinite: true,
-      slidesToShow: {{ section.settings.slider_items }},
-      slidesToScroll: 1
-    })
+    $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({infinite: true, slidesToShow: {{ section.settings.slider_items }}, slidesToScroll: 1})
   });
 </script>
 
