@@ -1,17 +1,19 @@
 /* Slick slider Start */
 .slick-slider {
-
+  display: flex;
+  justify-content: space-between;
 }
-.slick-slider .slick-arrow {
+
+/* .slick-slider .slick-arrow {
   position: absolute;
   font-size: 0;
   width: 100px;
-  height: 50px;
+  height: 40px;
   font-size: 0;
   line-height: 50px;
   overflow: hidden;
   background: var(--gradient-base-background-2);
-  color: var(--color-foreground);
+  color: wheat;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -19,8 +21,12 @@
   transition: 0.2s linear opacity;
   opacity: 1;
   z-index: 1;
-}
-.slick-slider .slick-arrow:hover {
+  background: linear-gradient(180.07deg, #874A00 -24.91%, #C06A04 112.11%);
+  box-shadow: 0px 1px 10px rgba(192, 106, 4, 0.7);
+  border-radius: 25px;
+} */
+
+/* .slick-slider .slick-arrow:hover {
   opacity: 0.95;
 }
 .slick-slider .slick-arrow:before {
@@ -38,7 +44,7 @@
 .slick-slider .slick-next::before {
   content: '>';
 }
-/* Slick slider End */
+Slick slider End */
 
 /* Lincks */
 a {
@@ -46,8 +52,9 @@ a {
   text-decoration: none;
 }
 
+slider-product-proposal__slider-list
 .slider-product-proposal {
-  padding: 0;
+  padding: 0 0 50px;
 }
 .page-width {
 }
@@ -66,6 +73,8 @@ a {
 .slider-product-proposal__slider {
 }
 .slider-product-proposal__slider-list {
+  display: flex;
+  justify-content: space-between;
 }
 .slider-product-proposal__slider-item {
 }
@@ -78,4 +87,46 @@ a {
 .slider-item__description {
 }
 .slider-item__price {
+}
+
+/* Slider's buttons */
+.slider-product-proposal__control {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.control-prev, .control-next {
+  background: linear-gradient(180.07deg, #874A00 -24.91%, #C06A04 112.11%);
+  box-shadow: 0px 1px 10px rgba(192, 106, 4, 0.7);
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: wheat;
+}
+.control-prev {
+  border-radius: 25px 0 0 25px;
+}
+.control-prev:hover {
+  opacity: 0.9;
+  transition: 0.4s linear opacity;
+}
+.control-prev::before {
+  font-size: 25px;
+  content: '<';
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.control-next {
+  border-radius: 0 25px 25px 0;
+}
+.control-next:hover {
+  opacity: 0.9;
+  transition: 0.4s linear opacity;
+}
+.control-next::before {
+  font-size: 25px;
+  content: '>';
 }

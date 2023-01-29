@@ -29,6 +29,12 @@
             {% endif %}
           {% endfor %}
         </div>
+
+        {% comment %} Перемикачі слайдера {% endcomment %}
+        <div class="slider-product-proposal__control">
+          <button type="button" class="slick-arrow slick-prev control-prev"></button>
+          <button type="button" class="slick-arrow slick-next control-next"></button>
+        </div>
       </div>
     </div>
   </div>
@@ -45,7 +51,11 @@
     $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
     infinite: true,
     slidesToShow: {{ section.settings.slider_items }},
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: true,
+    {% comment %} Додається клас до кнопок слайдеру {% endcomment %}
+    prevArrow: $('#shopify-section-{{section.id}} .control-prev'),
+    nextArrow: $('#shopify-section-{{section.id}} .control-next')
     })
   });
 </script>
@@ -63,7 +73,7 @@
         "max": 10,
         "step": 1,
         "label": "Items in a row",
-        "default": 2,
+        "default": 2
       }
     ],
     "blocks": [
