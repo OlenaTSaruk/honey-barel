@@ -52,10 +52,13 @@ a {
   color: var(--color-foreground);
   text-decoration: none;
 }
-a.slider-item__link:hover .slider-item__image .slider-item__picture{
+/* a.slider-item__link:hover .slider-item__image .slider-item__picture{
+    transform: scale(1.05);
+} */
+
+.slider-item__picture:hover {
   transform: scale(1.05);
 }
-
 slider-product-proposal__slider-list
 .slider-product-proposal {
   padding: 0 0 50px;
@@ -90,7 +93,7 @@ slider-product-proposal__slider-list
   height: 300px;
   overflow: hidden;
   border-radius: 25px;
-  transition: 0.3s linear transform;
+  transition: 0.5s linear transform;
 }
 .slider-item__picture {
   width: inherit;
@@ -102,6 +105,11 @@ slider-product-proposal__slider-list
 .slider-item__description {
 }
 .slider-item__price {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  border-top: 3px solid #FFD701;
+  width: 100px;
 }
 
 /* Slider's buttons */
@@ -125,7 +133,7 @@ slider-product-proposal__slider-list
 }
 .control-prev:hover {
   opacity: 0.9;
-  transition: 0.4s linear opacity;
+  transition: 0.2s linear opacity;
 }
 .control-prev::before {
   font-size: 25px;
@@ -140,7 +148,7 @@ slider-product-proposal__slider-list
 }
 .control-next:hover {
   opacity: 0.9;
-  transition: 0.4s linear opacity;
+  transition: 0.2s linear opacity;
 }
 .control-next::before {
   font-size: 25px;
