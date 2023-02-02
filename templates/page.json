@@ -9,6 +9,7 @@
     },
     "3c2cc0d6-84f8-44b1-8404-96f60f37e44b": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--17417299001625__3c2cc0d6-84f8-44b1-8404-96f60f37e44b-167386240658093998-2": {
           "type": "featured_collection",
@@ -39,10 +40,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "0cf422df-d9ef-4685-b0e9-1e947e939af9": {
+      "type": "images-links",
+      "settings": {
+        "image_v_1": "shopify:\/\/shop_images\/honey-comb.jpg"
+      }
     }
   },
   "order": [
     "main",
-    "3c2cc0d6-84f8-44b1-8404-96f60f37e44b"
+    "3c2cc0d6-84f8-44b1-8404-96f60f37e44b",
+    "0cf422df-d9ef-4685-b0e9-1e947e939af9"
   ]
 }
