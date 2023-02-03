@@ -1,5 +1,36 @@
 <div class="page-width">
-  Hello!
+
+  <div id="image_v_1" style="margin: 5px 0; padding: 5px; border: 1px solid brown;">
+    <h2>Зображення варіант 1</h2>
+
+    {% if section.settings.image_v_1 != blank %}
+      <div>
+        {{ section.settings.image_v_1 | image_url: width: 300 | image_tag: class: 'image_v_1', loading: 'lazy' }}
+        {{ section.settings.image_v_1 | img_url: '100x' | img_tag }}
+        {{ section.settings.image_v_1 | image_url: width: 200 | image_tag: alt: 'honey' }}
+        {{ section.settings.image_v_1 | image_url: width: 400, height: 400, crop: 'center' | image_tag }}
+        <img src="{{ section.settings.image_v_1 | img_url: 'icon' }}" alt="{{ section.settings.image_v_1 }}">
+      </div>
+    {% endif %}
+  </div>
+
+  <div id="image_v_2" style="margin: 5px 0; padding: 5px; border: 1px solid brown;">
+    <h2>Зображення варіант 2</h2>
+    {% if section.settings.image_v_2 != blank %}
+      <h3>Існуючі зображення</h3>
+
+    {% else %}
+      <h3>Зображення відсутні</h3>
+      <div>
+        {{ section.settings.image_v_2 | img_url: '200x' | img_tag }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div id="image_v_3" style="margin: 5px 0; padding: 5px; border: 1px solid brown;">
+    <h2>Зображення варіант 3</h2>
+    {% comment %} {% if section.settings.image_v_2 != blank %}
+    {% endif %} {% endcomment %}
 </div>
 
 {% schema %}
@@ -12,6 +43,11 @@
       "type": "image_picker",
       "id": "image_v_1",
       "label": "Image v1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_v_2",
+      "label": "Image v2"
     }
   ],
 
