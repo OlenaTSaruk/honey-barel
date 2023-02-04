@@ -136,11 +136,12 @@ slider-product-proposal__slider-list
   transition: 0.2s linear opacity;
 }
 .control-prev::before {
-  font-size: 25px;
-  content: '<';
-  /* top: 50%;
+  /* font-size: 25px;
+   content: '<';
+ top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
+  width: 5px;
 }
 
 .control-next {
@@ -152,5 +153,5 @@ slider-product-proposal__slider-list
 }
 .control-next::before {
   font-size: 25px;
-  content: '>';
+  /* content: '>'; */
 }

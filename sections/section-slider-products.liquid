@@ -32,8 +32,12 @@
 
         {% comment %} Перемикачі слайдера {% endcomment %}
         <div class="slider-product-proposal__control">
-          <button type="button" class="slick-arrow slick-prev control-prev"></button>
-          <button type="button" class="slick-arrow slick-next control-next"></button>
+          <button type="button" class="slick-arrow slick-prev control-prev">
+            {% render 'left' %}
+          </button>
+          <button type="button" class="slick-arrow slick-next control-next">
+            {% render 'right' %}
+          </button>
         </div>
       </div>
     </div>
