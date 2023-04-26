@@ -43,6 +43,7 @@
     },
     "0cf422df-d9ef-4685-b0e9-1e947e939af9": {
       "type": "images-links",
+      "disabled": true,
       "settings": {
         "image_v_1": "shopify:\/\/shop_images\/honey-comb.jpg"
       }

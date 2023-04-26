@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "0cf422df-d9ef-4685-b0e9-1e947e939af9": {
+      "type": "images-links",
+      "settings": {
+        "image_v_1": "shopify:\/\/shop_images\/honey-comb.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0cf422df-d9ef-4685-b0e9-1e947e939af9"
+  ]
+}
